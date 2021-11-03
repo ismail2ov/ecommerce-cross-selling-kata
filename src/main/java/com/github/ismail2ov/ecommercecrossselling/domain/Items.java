@@ -12,4 +12,10 @@ import java.util.List;
 @NoArgsConstructor
 public class Items {
     List<Product> products = new ArrayList<>();
+
+    public void addItem(Product product) {
+        if (!products.contains(product)) {
+            products.add(product);
+        }
+    }
 }

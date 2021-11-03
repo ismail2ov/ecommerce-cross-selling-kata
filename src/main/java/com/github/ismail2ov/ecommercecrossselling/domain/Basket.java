@@ -29,4 +29,8 @@ public class Basket {
     @Type(type = "jsonb")
     @Column(columnDefinition = "jsonb")
     private Items items = new Items();
+
+    public void addItem(Product product) {
+        items.addItem(product);
+    }
 }
